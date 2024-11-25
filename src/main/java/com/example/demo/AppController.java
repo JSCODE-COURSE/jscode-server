@@ -9,4 +9,9 @@ public class AppController {
   public String home() {
     return "Hello, World!";
   }
+
+  @GetMapping("/health")
+  public String healthCheck() {
+    return "Success Health Check";
+  }
 }
