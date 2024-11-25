@@ -5,10 +5,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class AppController {
-  @GetMapping("/")
-  public String home() {
-    return "Hello, World!";
-  }
 
   @GetMapping("/health")
   public String healthCheck() {
