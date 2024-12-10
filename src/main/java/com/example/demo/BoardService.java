@@ -14,6 +14,13 @@ public class BoardService {
   }
 
   public List<Board> getBoards(Pageable pageable) {
+    // 복잡한 로직이라고 가정
+    int sum = 0;
+    for (int i = 0; i < 1000; i++) {
+      for (int j = 0; j < 1000; j++) {
+        sum += i + j; // 의미없는 계산
+      }
+    }
     return boardRepository.findAll(pageable).getContent();
   }
 
